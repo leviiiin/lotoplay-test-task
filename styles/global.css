@@ -1,0 +1,106 @@
+:root {
+  --color-black: #0E0E12;
+  --color-gray: #1B1E29;
+  --color-light-gray: #2A2F3A;
+  --color-dark-gray: #151821;
+  --color-dark-white: #AEB3BE;
+  --color-white: #E7E7E7;
+  --color-blue: #4DD2FF;
+  --color-red: #F82C56;
+  --color-red-dark: #f8103a;
+  --color-yellow: #FDDC10;
+  --color-yellow-light: #FEEB44;
+  --color-yellow-dark: #E6C201;
+  --gradient-dark-red: #1f1219;
+  --gradient-dark: #13222A;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: var(--color-black);
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1, .h1 {
+  font-size: 54px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+}
+
+h2, .h2 {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+h3, .h3 {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: bold;
+  margin: 0;
+}
+
+p, .p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 25px 0 0 0;
+}
+
+button, .button {
+  display: flex;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px 17px;
+  border: none;
+  border-radius: 10px;
+  background: var(--color-red);
+  color: var(--color-white);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background: var(--color-red-dark);
+}
+
+.button--yellow {
+  font-size: 20px;
+  padding: 16px 17px;
+  border: 2px solid var(--color-yellow-dark);
+  color: var(--color-black);
+  background: #FDDC10;
+  background: linear-gradient(90deg, var(--color-yellow) 0%, var(--color-yellow-light)50%, var(--color-yellow) 100%);
+  text-transform: uppercase;
+}
+
+.button--yellow:hover {
+  background: linear-gradient(90deg, var(--color-yellow-light) 0%, var(--color-yellow)50%, var(--color-yellow-light) 100%);
+}
+
+@media (max-width: 1024px) {
+  h1, .h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 425px) {
+  h1, .h1 {
+    font-size: 32px;
+  }
+}
